@@ -10,6 +10,12 @@
 * 최신방식인 Stack이 나와서 View 보다 안정적임  View(는 ios 15이하만 가능) 
 
 
+## Navigation에서의 push와 pop이란?
+
+* Push는 화면 이동 이라고 보면 된다
+
+* Pop는 뒤로 가기라고 보면 된다
+
 # NavigationStack
 
 * 후속 탐색에서 뷰를 설정하는 데 사용되고 새 뷰를 이전 뷰 위에 쌓아서 하나의 뷰가 항상 맨위에 있음
@@ -19,6 +25,17 @@ NavigationStack {
     Text("홈 화면")
 }
 ```
+
+* 뷰 위에 다른 뷰들을 계층적 스택(Stack) 구조로 쌓고(push) 제거(pop)하는 화면 전환을 관리
+
+**핵심!**
+
+NavigationStack의 핵심은 
+
+화면 이동은 UI가 아니라 상태(state)로 관리한다 라는 것이다!
+
+
+
 
 
 ## NavigationLink
@@ -60,4 +77,10 @@ NavigationStack {
 * 내비게이션 바의 제목을 더 크고 강조하여 보여주는 기능임
 
 
-## Navigation
+## Navigation 총 정리
+
+* NavigationStack-> 화면 전환을 관리
+
+* NavigationLink-> 버튼처럼 활용함
+
+* Navigation Title->네비게이션바 생성
