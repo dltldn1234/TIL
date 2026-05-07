@@ -88,6 +88,7 @@ extension 서버통신: Identifiable { // 맵핑
 title_A : string 가 DTO에서 Domain Model로 넘어오면 title : string
 ```
 
+
 ># 실제 모델링이 되는 과정
 
 
